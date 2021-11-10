@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import environ
 
+
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_extensions",
     "debug_toolbar",
-    "books",
+    # "books",
 ]
 
 MIDDLEWARE = [
@@ -134,4 +135,4 @@ STATIC_URL = "/static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL = "books.User"
+
